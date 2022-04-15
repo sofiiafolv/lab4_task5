@@ -2,11 +2,11 @@
 
 Description of the game.py module to create a game space for the main.py module
 
-##Desccription
+## Desccription
 
 There are classes Room, Character, Friend, Enemy and Item for creating a game space. Friend and Enemy are inherited from the Character. 
 
-##Room
+## Room
 
 Attributes: name, rooms(adjoining rooms), item, character, description.
 
@@ -22,7 +22,7 @@ get_character and get_item return an instance of the class or None if there no c
 
 move(self, location) According to the indexes and corners of the world mentioned earlier, changes one instance of the class and all its attributes to another, if the list item is not equal to None. If None, print that you cant go there.
 
-##Character
+## Character
 
 Attributes: name, description, conversation.
 
@@ -32,10 +32,10 @@ describe() Just prints a string with self.name and self.description
 
 talk() Just prints conversation
 
-##Friend
+## Friend
 As there are no friends in main.py, there is just pass
 
-##Enemy
+## Enemy
 
 Attributes from Character
 
@@ -45,7 +45,7 @@ fight(self, weapon). Check if passes argument is equal to self.weakness, changes
 
 get_defeated(self) Just returns number_of_victories to control game process.
 
-##Item
+## Item
 
 Attributes: name, description
 
@@ -55,5 +55,5 @@ describe() Prints string with self.name and self.description
 
 get_name() returns a name of item to put in back pack
 
-##main.py
+## main.py
 This module was not changed
